@@ -60,6 +60,12 @@ if (isset($_POST['delete'])) {
     <title>Todo List</title>
   </head>
   <body>
+  <div class="header">
+    <h1>Todo List</h1>
+    <form action="logout.php">
+      <button>Logout</button>
+    </form>
+  </div>
     
   </body>
   </html>
