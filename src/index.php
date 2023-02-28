@@ -66,6 +66,38 @@ if (isset($_POST['delete'])) {
       <button>Logout</button>
     </form>
   </div>
+
+
+  <!--Formulär -->
+  <div class="container">
+    <form action="" method="POST">
+      <input type="text" name="title" placeholder="Title" required>
+      <textarea name="description" placeholder="Description" required></textarea>
+      <button type="submit">Add Task</button>
+    </form>
+    <hr>
+    <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+      <div class="task">
+        <form action="" method="POST">
+        <form action="" method="POST">
+  <input type="hidden" name="user_id" value="<?php echo $row['id']; ?>">
+  <input type="text" name="title" value="<?php echo $row['title']; ?>">
+  <textarea name="description"><?php echo $row['description']; ?></textarea>
+  <?php if ($row['completed']) { ?>
+    <input type="checkbox" name="completed" checked disabled>
+  <?php } else { ?>
+    <button type="submit" name="mark_complete">Mark Complete</button>
+  <?php } ?>
+  <button type="submit" name="edit">Save</button>
+  <button type="submit" name="delete">Delete</button>
+</form>
+      </div>
+    <?php } ?>
+    <hr>
+    <form action="" method="POST">
+      <button type="submit" name="delete_completed">Delete Completed Tasks</button>
+    </form>
+  </div>
+</body>
+</html>
     
-  </body>
-  </html>
