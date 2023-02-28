@@ -63,7 +63,7 @@ if (isset($_POST['delete'])) {
   <div class="header">
     <h1>Todo List</h1>
     <form action="logout.php">
-      <button>Logout</button>
+      <button>Logout</button> <!--Logga utt knappen -->
     </form>
   </div>
 
@@ -73,7 +73,7 @@ if (isset($_POST['delete'])) {
     <form action="" method="POST">
       <input type="text" name="title" placeholder="Title" required>
       <textarea name="description" placeholder="Description" required></textarea>
-      <button type="submit">Add Task</button>
+      <button type="submit">Add Task</button> <!--Lägga till uppgift-->
     </form>
     <hr>
     <?php while ($row = mysqli_fetch_assoc($result)) { ?>
@@ -88,8 +88,8 @@ if (isset($_POST['delete'])) {
   <?php } else { ?>
     <button type="submit" name="mark_complete">Mark Complete</button>
   <?php } ?>
-  <button type="submit" name="edit">Save</button>
-  <button type="submit" name="delete">Delete</button>
+  <button type="submit" name="edit">Save</button> <!--Ändra uppgift-->
+  <button type="submit" name="delete">Delete</button> <!--Ta bort-->
 </form>
       </div>
     <?php } ?>

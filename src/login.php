@@ -26,7 +26,7 @@ if (isset($_POST['username'])) {
 <html>
 <head>
   <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 <body>
   <div class="container">
