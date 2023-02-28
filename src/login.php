@@ -1,10 +1,10 @@
- <!--Funktioner för inloggninen -->
 <?php
+//Funktioner för inloggning
 session_start();
 if (isset($_SESSION['username'])) {
   header('location: index.php');
 }
-include 'dbConnection.php';
+include './dbConnection.php';
 if (isset($_POST['username'])) {
   $username = $_POST['username'];
   $password = $_POST['password'];
@@ -21,7 +21,7 @@ if (isset($_POST['username'])) {
 }
 ?>
 
- <!--Formulär för inloggning-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,6 +29,7 @@ if (isset($_POST['username'])) {
   <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 <body>
+   <!--Formulär för inloggning-->
   <div class="container">
     <form action="" method="POST">
       <h1>Login</h1>
