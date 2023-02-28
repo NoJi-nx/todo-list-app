@@ -3,11 +3,11 @@ session_start();
 if (!isset($_SESSION['username'])) {
   header('location: login.php');
 }
-include './dbConnection.php';
+include './dbConnection.php';   //Anslutning till databasen
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-  // Add task
+  // Lägga till uppgift
   if (isset($_POST['add_task'])) {
     $title = $_POST['title'];
     $description = $_POST['description'];
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_stmt_close($stmt);
   }
 
-  // Edit task
+  // Ändra uppgift
   if (isset($_POST['edit_task'])) {
     $id = $_POST['id'];
     $title = $_POST['title'];
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_stmt_close($stmt);
   }
 
-  // Delete task
+  // Ta bort uppgift
   if (isset($_POST['delete_task'])) {
     $id = $_POST['id'];
     $query = "DELETE FROM tasks WHERE id=?";
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_stmt_close($stmt);
   }
 
-  // Mark task as completed
+  // Markera som slutfört
   if (isset($_POST['mark_complete'])) {
     $id = $_POST['id'];
     $query = "UPDATE tasks SET completed=1 WHERE id=?";
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_stmt_close($stmt);
   }
 
-  // Mark task as incomplete
+  // Ej slutfört
   if (isset($_POST['mark_incomplete'])) {
     $id = $_POST['id'];
     $query = "UPDATE tasks SET completed=0 WHERE id=?";
@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_stmt_close($stmt);
   }
 
-  // Delete completed tasks
+  // Ta bort markerade  uppgifter
   if (isset($_POST['delete_completed'])) {
     $user_id = $_SESSION['user_id'];
     $query = "DELETE FROM tasks WHERE user_id=? AND completed=1";
