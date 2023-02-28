@@ -3,7 +3,7 @@
 
 
 
-/* General Styles */
+/* Standard Stil */
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -48,7 +48,7 @@ a {
   background-color: #3e8e41;
 }
 
-/* Form Styles */
+/* Form stil */
 form {
   display: flex;
   flex-direction: column;
@@ -89,7 +89,7 @@ button[type="submit"]:hover {
   background-color: #3e8e41;
 }
 
-/* Table Styles */
+/* Tabeller */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -117,7 +117,7 @@ th {
   font-weight: bold;
 }
 
-/* Button Styles */
+/* Knappar */
 .delete-button,
 .edit-button,
 .mark-complete-button {
