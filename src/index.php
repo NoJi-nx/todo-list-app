@@ -6,7 +6,7 @@ if (!isset($_SESSION['username'])) {
 }
 include 'dbConnection.php';
 
-//CRUD Metoden
+//CRUD Metoden och anslutning till databas tabellerna
 
 //Visar uppgifter
 if (isset($_POST['title'])) {

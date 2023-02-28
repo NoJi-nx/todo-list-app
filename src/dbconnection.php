@@ -1,3 +1,4 @@
+<!--Anslutning till databasen-->
 <?php
 $conn = mysqli_connect('db', 'root', 'example', 'todo_list');
 

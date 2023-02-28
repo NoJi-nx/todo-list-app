@@ -1,3 +1,5 @@
+ <!--Funktioner för registrering-->
+
 <?php
 session_start();
 if (isset($_SESSION['username'])) {
@@ -18,6 +20,7 @@ if (isset($_POST['username'])) {
   }
   ?>
 
+ <!--Formulär för registreringen -->
 <!DOCTYPE html>
 <html>
 <head>

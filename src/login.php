@@ -1,3 +1,4 @@
+ <!--Funktioner för inloggninen -->
 <?php
 session_start();
 if (isset($_SESSION['username'])) {
@@ -20,6 +21,7 @@ if (isset($_POST['username'])) {
 }
 ?>
 
+ <!--Formulär för inloggning-->
 <!DOCTYPE html>
 <html>
 <head>
