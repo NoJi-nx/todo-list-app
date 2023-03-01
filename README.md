@@ -17,12 +17,12 @@
 #### För veta hur det funkar på sidan, finns det följande steg och bilder att visa:
 
 
-#### 1. Inloggningsidan där det visar loggningsuppgifter och formulär:
+#### 1. Inloggningsidan där det visar loggningsuppgifter och formulärer.
 ![img1](./img/Screenshot%20(129).png)
 
 <br>
 
-#### 2. Inloggningsidan där man anger fel inloggningsuppgifter
+#### 2. Inloggningsidan där man anger fel inloggningsuppgifter som visas meddelandet på toppen.
 ![img2](./img/Screenshot%20(153).png)
 
 <br>
