@@ -1,6 +1,6 @@
 <?php
 
-//Anslutning till databasen
+
 
 $conn = mysqli_connect('db', 'root', 'example', 'todo_list');
 
