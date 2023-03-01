@@ -5,7 +5,7 @@
 
 <br>
 
-## Användande
+## Användning
 
 
 #### 1. Logga in eller registrera . <br> 2. Lägg till en ny uppgift genom att ange uppgiftens titel och beskrivning i formuläret högst upp på sidan och klicka på knappen Add Task. <br> 3. Redigera en uppgift genom att klicka på knappen Redigera bredvid den och göra önskade ändringar i formuläret som visas. <br> 4. Ta bort en uppgift genom att klicka på knappen Delete bredvid den. <br> 5. Markera en uppgift som slutförd genom att klicka på knappen Mark As Complete bredvid den. <br> 6. Ta bort alla slutförda uppgifter genom att klicka på knappen Delete Completed Tasks längst ned på sidan. <br> 7. Logga ut genom att klicka på knappen Logout högst upp på sidan.
