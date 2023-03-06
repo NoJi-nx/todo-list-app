@@ -1,8 +1,10 @@
 <?php
+//Seession start, kika om användaren är inloggad
 session_start();
 if (!isset($_SESSION['username'])) {
   header('location: login.php');
 }
+
 include './dbConnection.php';   //Anslutning till databasen
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
